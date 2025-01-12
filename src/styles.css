@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'MyFont'; /* Custom name for your font */
+    src: url('./assets/Font/JacquesFrancois-Regular.ttf') format('truetype');
+    font-weight: normal; /* Optional: Specify weight */
+    font-style: normal;  /* Optional: Specify style */
+  }
+@font-face {
+    font-family: 'Abreto'; /* Custom name for your font */
+    src: url('./assets/Font/Aboreto/Aboreto-Regular.ttf') format('truetype');
+    font-weight: normal; /* Optional: Specify weight */
+    font-style: normal;  /* Optional: Specify style */
+  }

@@ -1,0 +1,52 @@
+.match {
+     cursor: pointer;
+}
+
+.text_one {
+     /* letter-spacing: 10px; */
+     text-transform: capitalize;
+     font-family: "'MyFont', serif;";
+}
+
+.text_two{
+     font-family: "'MyFont', serif;";
+}
+.jacques-francois-regular {
+     font-family: "'MyFont', serif;";
+ 
+     font-weight: 400;
+     text-transform: uppercase;
+     font-style: normal;
+     position: absolute;
+     letter-spacing: 10px;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+     font-size: clamp(5rem, 10vw, 15.75rem);
+}
+
+
+@media (max-width: 768px) {
+     .jacques-francois-regular  {
+       font-size: clamp(4rem, 8vw, 10rem);
+     }
+   }
+   
+   /* Large screens */
+   @media (min-width: 1200px) {
+     .jacques-francois-regular  {
+       font-size: clamp(6rem, 12vw, 20rem);
+     }
+   }
+
+   .abreto{
+     font-family: "'abreto', serif;";
+     font-size: 30.49px;
+   }
+
+   .text_hert{
+      font-family: sans-serif;
+      font-size: 15px;
+      
+   }

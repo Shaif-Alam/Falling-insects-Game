@@ -1,0 +1,90 @@
+/* Breaking Animation */
+@keyframes breaking {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  
+  .square {
+    width: 50px;
+    height: 50px;
+    background: #4caf50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .square.breaking {
+    animation: breaking 1s forwards;
+    background: #E0E0E0; 
+    color: #E0E0E0;/* Color changes during breaking */
+  }
+  
+  .square:hover {
+    transform: translateX(-50%) scale(1.2);
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    /* justify-content: space-between; */
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1000;
+  }
+  
+  .header h2 {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+  }
+  
+  /* Game Container */
+  .game-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #f4f4f4;
+    overflow: hidden;
+    margin-top: 60px; /* Offset for the header */
+  }
+  
+  .path {
+    width: 15%;
+    height: 100%;
+    background: #e0e0e0;
+    position: relative;
+  }
+  
+
+  .main{
+     display: flex;
+     width: 100%;
+     align-items: center;
+      justify-content: space-around;
+  }

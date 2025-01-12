@@ -1,0 +1,37 @@
+<!-- Header: Display Total Score and Round -->
+<div class="header">
+    <div class="main">
+        <div>
+            <h2>Current Round: {{ currentRound }}</h2>
+        </div>
+        <div>
+            <h1>Total Score: {{ totalScore }}</h1>
+        </div>
+       
+    </div>
+  
+
+  </div>
+  
+  <!-- Game Area -->
+  <div class="game-container">
+    <div class="path" *ngFor="let path of paths; let i = index">
+      <div
+        class="square"
+        *ngFor="let square of squares[i]"
+        (click)="removeSquare(i, square)"
+        [style.top]="square.position + 'px'"
+        [class.breaking]="square.breaking"
+      >
+        {{ square.number }}
+      </div>
+    </div>
+  </div>
+  
+  <!-- Snackbar -->
+  <div class="snackbar" *ngIf="snackbarVisible">
+    🎉 Congratulations! You completed Round {{ currentRound - 1 }}! 🎉
+  </div>
+  
+  
+  
